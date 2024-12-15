@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Fira Sans;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+header {
+    background-color: #457d58;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 85px;
+    width: auto;
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #bd811a;
+}
+
+
+/* Section Accueil */
+.section-accueil {
+    /*background-image: url('Image/background-montpellier.jpg'); */
+    background-image: url('Image/Background.png');
+	background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+    position: relative;
+    color: #af740e;
+}
+
+.section-accueil::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   background-color:#af740e
+    z-index: 1;
+}
+
+.accueil-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.texte-accueil {
+    flex: 1;
+    padding: 20px;
+}
+
+.texte-accueil h1 {
+    font-size: 3em;
+    color: #1f5014;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.texte-accueil p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.texte-accueil h2 {
+    font-size: 2em;
+    color: #58c3db;
+    margin-bottom: 20px;
+    
+}
+
+.button-cta {
+    background-color: #7d9b76;
+    color: #fff;
+    padding: 5px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-cta:hover {
+    background-color: #7d9b76;
+    transform: translateY(-5px);
+}
+
+.video-accueil {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/* Section Nos Offres et Actualités */
+.section-card {
+    padding: 60px 20px;
+    text-align: center;
+	background-color: #878787;
+}
+
+/* Texte sous le titre de la section - mise en forme professionnelle */
+.section-card-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 70%;
+    margin: 0 auto 40px auto; /* Centrer le texte avec un espace suffisant en bas */
+    color: #444; /* Couleur de texte gris foncé pour un meilleur contraste */
+    background: #f1f1f1; /* Fond blanc avec une légère opacité pour la distinction */
+    padding: 20px; /* Ajout de padding pour rendre le texte confortable à lire */
+    border-left: 5px solid #7d9b76; /* Bande verticale orange à gauche pour un effet moderne */
+    border-radius: 10px; /* Bords arrondis pour un style plus doux */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Ombre légère pour donner de la profondeur */
+}
+
+/* Cartes des Offres */
+.card-content {
+    padding: 20px;
+    text-align: left;
+    background-color: #7d9b76; /* Couleur pleine sans transparence */
+    border-radius: 8px; /* Bords arrondis */
+}
+
+/* Suppression de la transparence des textes dans les cartes */
+.card-content h2,
+.card-content p {
+    color: #fff; /* Blanc pour le contraste avec l'arrière-plan coloré */
+}
+
+/* Section Nos Offres */
+
+
+.section-card h1 {
+    font-size: 2.5em;
+    color: #fff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Légère ombre portée pour le texte du titre */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Cartes */
+.card {
+    width: 30%;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    background-size: cover;
+    background-position: center;
+    color: #7d9b76;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-standard .card-title {
+    background-image: url('Image/offre-bg.png'); /* Assurez-vous que l'image est présente */
+}
+
+.card-premium .card-title {
+    background-image: url('Image/offre-bg.png'); /* Assurez-vous que l'image est présente */
+}
+
+.card-familiale .card-title {
+    background-image: url('Image/offre-bg.png'); /* Assurez-vous que l'image est présente */
+}
+
+.card-actualites1 .card-title {
+    background-image: url('Image/actualites-bg.png'); /* Assurez-vous que l'image est présente */
+}
+
+.card-actualites2 .card-title {
+    background-image: url('Image/actualites-bg.png'); /* Assurez-vous que l'image est présente */
+}
+
+.card-actualites3 .card-title {
+    background-image: url('Image/actualites-bg.png'); /* Assurez-vous que l'image est présente */
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Couleurs des corps des cartes */
+.card-standard .card-content {
+    background-color: #af740e;
+}
+
+.card-premium .card-content {
+    background-color: #af740e;
+}
+
+.card-familiale .card-content {
+    background-color: #af740e;
+}
+
+/* Section Nos Offres avec une image en arrière-plan */
+#nos-offres {
+    background-image: url('Image/offres-right.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #fff; /* Rendre le texte blanc pour un meilleur contraste */
+    position: relative;
+}
+
+#nos-offres::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay noir semi-transparent pour améliorer la lisibilité */
+    z-index: 0;
+}
+
+#nos-offres h1, #nos-offres p, #nos-offres .card-container {
+    position: relative;
+    z-index: 1; /* S'assurer que le texte et les cartes sont au-dessus de l'overlay */
+}
+
+/* Container de cartes */
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Cartes */
+.card {
+    width: 30%;
+    background-color: #fff; /* Fond blanc légèrement transparent pour mettre en valeur le contenu */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    padding: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+ }
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+/* Boutons */
+.button {
+    background-color: #fff;
+    color: #1f5014;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    align-self: flex-start;
+}
+
+.button:hover {
+    background-color: #7d9b76;
+    color: #fff;
+}
+
+
+
+
+.card-actualites1 .card-content {
+    background-color: #1f5014;
+}
+
+.card-actualites2 .card-content {
+    background-color: #7d9b76;
+}
+
+.card-actualites3 .card-content {
+    background-color: #1f5014;
+}
+
+.card-content h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.card-content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    color: #fff;
+}
+
+/* Boutons */
+/*.button {
+    background-color: ##58c3db;
+    color: #1f5014;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #7d9b76;
+    color: #fff;
+}*/
+
+.map {
+    height: 400px;
+    width: 100%;
+	}
+	
+/* Footer */
+.section6 {
+    background-color: #878787;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+/* Bouton de Retour en Haut de la Page */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7d9b76;
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 1.5em;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.back-to-top:hover {
+    background-color: #e66000;
+}
+
+/* Afficher le bouton de retour quand on descend */
+body.scrolled .back-to-top {
+    display: flex;
+}
+/* Témoignages */
+
+.section5 h1 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: bold;
+	padding: 20px 10px;
+    background-color: #1f5014;
+    text-align: center;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.testimonial {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+/* Partenaires */
+.section-partners { 
+	padding: 60px 20px;
+    background-color: #7d9b76;
+    text-align: center;
+	color:#ffff
+}
+
+.partners-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.partners-container img {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.partners-container img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness</title>
+    <link rel="stylesheet" href="./Wellness.css">
+</head>
+<body>
+
+<header>
+    <nav>
+    <div class="nav-container">
+  	<img src="Image/Logo.png" alt="Logo du site" class="logo">
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#nos-offres">Nos Offres</a></li>
+                <li><a href="#actualites">Actualités</a></li>
+                <li><a href="mailto:latortuet@gmail.com">Nous contacter</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#partenaires">Partenaires</a></li>
+				<li><a href="#Devenir membre">Devenir membre</a></li>
+				<li><a href="#A propos">Réserver</a></li>
+				<li><a href="#Langue"><i>Fr</i></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <!-- Section Accueil -->
+    <section id="accueil" class="section-accueil">
+        <div class="accueil-container">
+            <div class="texte-accueil">
+                <h1>UN TRAIT À LA FOIS!</h1>
+                <p>Bienvenue sur notre plateforme dédiée aux tatouages des seins! 🌍 Notre équipe et nos partenaires s’engagent à vous offrir une expérience accessible et enrichissante. Pour reconstruire votre estime et sublimer vos cicatrices.</p>
+                <h2>BIEN-ÊTRE, SÉCURITÉ, INNOVATION!</h2>
+				
+				<h3>Obtenez notre e-book sur les tatouages des seins</h3> 
+    <form action="traitement.php" method="POST">
+        <!-- Nom -->
+        <label for="nom">Nom & Prénom :</label><br>
+        <input type="text" id="nom" name="nom" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email :</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+     <!-- Message -->
+        <label for="message">Votre message :</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" placeholder="Écrivez votre message ici..."></textarea><br><br>
+        <!-- Consentement -->
+        <label>
+            <input type="checkbox" name="consentement" required>
+            J'accepte que mes données soient utilisées dans le cadre de ma demande.
+        </label><br><br>
+
+        <!-- Bouton de soumission -->
+        <button type="submit">Envoyer</button>
+    </form>
+	 </div>	
+	 
+            <div class="video-accueil">
+                <video width="100%" height="auto" controls>
+                    <source src="Video/video1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Section Nos Offres -->
+    <section id="nos-offres" class="section-card">
+        <h1>Nos Offres</h1>
+        <p class="section-card-description">
+            Découvrez nos offres spécialement conçues pour répondre aux besoins des personnes à mobilité réduite. Hébergements accessibles, activités adaptées, et itinéraires inclusifs : tout est pensé pour garantir votre confort et votre bien-être. En partenariat avec des experts locaux et des associations, nous vous proposons des services uniques pour rendre chaque instant de votre séjour mémorable et sans contraintes. 🌟 Explorez nos options et planifiez dès aujourd’hui votre prochaine aventure.
+        </p>
+
+        <div class="card-container">
+            <div class="card card-standard">
+                <div class="card-title">
+                    <h2>Offre Standard</h2>
+                </div>
+                <div class="card-content">
+                    <p>Une prestation de tatouage médical personnalisée, axée sur la reconstruction esthétique avec des pigments de haute qualité, adaptée aux besoins essentiels de chaque cliente.</p>
+                    <a href="#" class="button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card card-premium">
+                <div class="card-title">
+                    <h2>Offre Premium</h2>
+                </div>
+                <div class="card-content">
+                    <p>Une expérience complète incluant une consultation approfondie, des retouches gratuites, et un suivi post-intervention pour un résultat optimisé. Tout votre plaisir et confort.</p>
+                    <a href="#" class="button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card card-familiale">
+                <div class="card-title">
+                    <h2>Offre Fidélité</h2>
+                </div>
+                <div class="card-content">
+                    <p>Une offre exclusive pour les clientes régulières, avec des avantages comme des remises, un accès prioritaire et des services personnalisés supplémentaires. Au petit soin, comme chez soi.</p>
+                    <a href="#" class="button">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Actualités -->
+    <section id="actualites" class="section-card">
+        <h1>Actualités</h1>
+        <p class="section-card-description">Restez informé des dernières nouveautés ! ✨ Découvrez ici toutes les actualités liées à la plateforme.</p>
+
+        <div class="card-container">
+            <div class="card card-actualites1">
+                <div class="card-title">
+                    <h2>Salon Les Thermalies</h2>
+                </div>
+                <div class="card-content">
+                    <p>Nous sommes heureux de participer au salon Les Thermalies de Paris du 23 au 26 janvier 2025. Ce sera pour nous l'occasion de rencontrer de potentiels partenaires et de clients.</p>
+                    <a href="#" class="button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card card-actualites2">
+                <div class="card-title">
+                    <h2>Grande Porte Ouverte Paris </h2>
+                </div>
+                <div class="card-content">
+                    <p>Participez à l’ouverture de notre point de vente à Paris le 22 février. Profitez de la journée pour recevoir notre kit de lancement. Cliquez sur "Plus" pour vous inscrire</p>
+                    <a href="#" class="button">En savoir plus</a>
+                </div>
+            </div>
+            <div class="card card-actualites3">
+                <div class="card-title">
+                    <h2>Porte Ouverte Bordeaux</h2>
+                </div>
+                <div class="card-content">
+                    <p>Participez à l’ouverture de notre point de vente à Bordeaux le 25 février. Profitez de la journée pour recevoir notre kit de lancement.Cliquez sur "Plus" pour vous inscrire maintenant</p>
+                    <a href="#" class="button">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section id="temoignages" class="section5">
+        <h1>Témoignages</h1>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <img src="Image/Image9.webp" alt="Client">
+                <blockquote>"Après ma mastectomie, je ne pouvais plus regarder mon corps dans le miroir sans ressentir une immense tristesse. Puis j'ai découvert le tatouage esthétique. Aujourd'hui, mes cicatrices sont couvertes de magnifiques motifs floraux. Cela a changé mon regard sur moi-même. Je me sens belle et forte, comme si je renaissais après cette épreuve."</blockquote>
+                <cite>Marie,45 ans</cite>
+            </div>
+            <div class="testimonial">
+                <img src="Image/Image7.webp" alt="Client">
+                <blockquote>"Le tatouage que j'ai choisi est un mandala délicat qui recouvre ma cicatrice. C'est devenu une partie de moi, un symbole de ma résilience et de ma victoire contre le cancer. Maintenant, je porte fièrement ce tatouage, et chaque fois que je le vois, je ressent une profonde fierté et un amour renouvelé pour mon corps."</blockquote>
+                <cite>Sophie, 38 ans</cite>
+            </div>
+            <div class="testimonial">
+                <img src="Image/Image8.webp" alt="Client">
+                <blockquote>"Mes cicatrices étaient un rappel constant de la douleur. En les recouvrant d'un tatouage représentant des ailes d'oiseau, j'ai transformé cette douleur en un message d'espoir et de liberté . Ce tatouage raconte mon histoire, et chaque fois que je le vois, je me rappelle à quel point je suis forte."</blockquote>
+                <cite>Clara, 42 ans</cite>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Partenaires -->
+    <section id="partenaires" class="section-partners">
+        <h1>Nos Partenaires</h1>
+        <div class="partners-container">
+            <a href="https://herault.fr/">
+                <img src="Image/partenaire-herault.png" alt="Département de l'Hérault">
+            </a>
+            <a href="https://www.herault-tourisme.com/fr/">
+                <img src="Image/partenaire-tourisme-herault.png" alt="Tourisme Hérault">
+            </a>
+            <a href="https://www.univ-montp3.fr/fr">
+                <img src="Image/partenaire-paul-valery.jpg" alt="Université Paul Valéry Montpellier 3">
+            </a>
+            <a href="https://www.occitanie.cci.fr/">
+                <img src="Image/partenaire-cci-occitanie.jpg" alt="CCI Occitanie">
+            </a>
+        </div>
+    </section>
+	<div class="map">
+  	<img src="Image/map.png" alt="Localisation" class="map">
+	</div>
+</main>
+
+<!-- Footer -->
+<footer>
+    <section class="section6">
+        <h4>SUIVEZ-NOUS</h4>
+        <div class="social-links">
+            <a href="#"><img src="Image/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="Image/instagram.png" alt="Instagram"></a>
+            <a href="#"><img src="Image/x.png" alt="TikTok"></a>
+<!--            <a href="#"><img src="Image/linkedin.png" alt="LinkedIn"></a>-->
+            <a href="#"><img src="Image/youtube.png" alt="YouTube"></a>
+        </div>
+        <p>&copy; 2024 - MITE 2 Taciana-Prisca-Laryssa-Valery - Tous droits réservés</p>
+    </section>
+    <a href="#top" class="back-to-top">↑ top</a>
+</footer>
+
+
+
+</body>
+</html>
